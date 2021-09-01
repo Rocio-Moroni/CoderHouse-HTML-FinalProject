@@ -1,0 +1,113 @@
+/* (STARTS) SECTION CONTAINS: 5th VIEWPORT "CONTACT US" */
+
+// Flexbox for viewport
+.contact__container {
+    display: flex;
+    position: relative;
+
+        // Map
+        .contact__map {
+            position: absolute;
+        }
+
+        // Viewport title
+        .contact__title {
+            @extend %titles__viewports;
+            @include titles__entire--left; 
+        }
+
+        // Studio info
+            .contact__data {
+                @extend %text__paragraph;
+            }
+
+        // Form black background
+        .contact__bg-black {
+            display: flex;
+            background-color: black;
+            position: absolute;
+
+        // White border
+        .contact__white-border::after {
+            border: 1px solid white;
+            top: 5%;
+            right: 3%;
+            bottom: 5%;
+            left: 3%;
+            content: "";
+            position: absolute;
+            z-index: 0;
+        }
+        }
+
+        // Text us, we want to meet you
+        .contact__aside-title {
+            font-family: $quicksand;
+            font-size: $font__m;
+            text-align: right;
+            color: white;
+            position: relative;
+        }
+        // Form
+        .contact__form {
+            position: relative;
+        }
+
+        .contact__fields {
+            position: relative;
+        }
+
+        .contact__fields input, .contact__fields textarea {
+            width: 75%;
+            margin-right: 5%;
+            font-size: 1.5em;
+            background: none;
+            border: 2px solid #ddd;
+            transition: 
+                border 0.3s ease;
+            background-color: white;
+        }
+        
+        /* PLACEHOLDER TANSITION */
+        .contact__fields .placeholder {
+            position: absolute;
+            display: block;
+            left: 10%;
+            top: calc(50% + 6px);
+            transform: translateY(-50%);
+            color: #aaa;
+            transition: 
+                top 0.3s ease;
+                font-size:  0.3s ease;
+                color:  0.3s ease;
+            padding: 0 5px;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .contact__fields input:valid + .placeholder,
+        .contact__fields input:focus + .placeholder{
+            top: 20px;
+            font-size: 10px;
+            color: #222;
+            border-color: #222;
+            transition-delay: 0.1s;
+            background: #fff;
+        }
+        
+        /* "SUBMIT" BUTTON TRANSITION */
+        .contact__fields div p input {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1em;
+        }
+        .contact__fields div p input:hover {
+            background-color: white;
+            border: 2px solid white;
+            color: black;
+            font-weight: 1000;
+            transition: 0.7s;
+        }
+}
+
+
+
+
+

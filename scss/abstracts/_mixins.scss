@@ -1,0 +1,52 @@
+/* MIXINS */
+
+// Flexbox 
+    // Viewports in halves (Reverse Flex)
+    @mixin flex__container--reverse {
+        flex-direction: reverse;
+        position: relative;
+    }
+
+// Section Titles 
+    // Half right viewport (Top Right)
+        /*@mixin titles__halfright--right {
+            margin-left: ;
+            margin-right: ;
+        } */
+    // Half right viewport (Top Left)
+        @mixin titles__halfright--left {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    // Half left viewport (Top Right)
+        @mixin titles__halfleft--right {
+            margin-left: 67%;
+            margin-right: 10%;
+        }
+    // Half viewport (Top Left)
+        @mixin titles__halfleft--left {
+            margin-left: 5%;
+            margin-right: 0%;
+        }
+    // Entire viewport (Top Right)
+        /*@mixin titles__entire--right {
+            margin-left: ;
+            margin-right: ;
+        }*/
+    // Entire viewport (Top Left)
+        @mixin titles__entire--left {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+// Paragraphs
+    // Half viewport (Centered)
+        @mixin paragraph__half--center {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            left: 0;
+        }
+
+
+

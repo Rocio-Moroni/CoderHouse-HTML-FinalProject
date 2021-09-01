@@ -1,0 +1,22 @@
+/* COMPONENTS */
+
+// Carousel
+    // Text Carousel
+        @mixin carousel__text {
+            font-family: $quicksand;
+            font-size: $text__s;
+            text-align: center;
+            font-style: italic;
+        }
+        %carousel__text-quotes {
+            width: 30vw;
+            margin-left: 20%;
+            margin-top: 1%;
+        }
+    //Slider Buttons
+        %carousel__slides--next-double-arrow {
+            background-image: url(../../multimedia/images/carousel__next.png);
+        }
+        %carousel__slides--prev-double-arrow {
+            background-image: url(../../multimedia/images/carousel__prev.png);
+        }

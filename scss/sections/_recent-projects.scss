@@ -1,0 +1,37 @@
+/* (STARTS) SECTION "RECENT PROJECTS": PROJECTS IMAGES + ASIDE TEXT (3RD VIEWPORT) */
+
+// Flexbox for viewport
+.rp__container {
+    display: flex;
+
+        // Black background
+        .rp__bg-color {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            position: relative;
+
+                // Project information
+                .rp__text {
+                    font-family: $quicksand;
+                    font-size: $font__m;
+                    color: white;
+                    text-align: right;
+                h4 {
+                    font-family: 'Quicksand', sans-serif;
+                    text-decoration: overline;
+                    text-transform: uppercase;
+                }
+                // "See Portfolio" Button
+                .btn {
+                    @extend %button__white;
+                    margin-top: -1%;
+                }}}
+
+        // Project image
+        .rp__img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+}

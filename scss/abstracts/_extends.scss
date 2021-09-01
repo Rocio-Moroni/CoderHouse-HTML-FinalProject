@@ -1,0 +1,34 @@
+/* EXTENDS */
+
+// Flexbox 
+    // IN VIEWPORTS (Containers)
+    %container__half {
+        display: flex;
+    }
+
+// Titles 
+    // Viewports
+    %titles__viewports {
+        font-family: $quicksand;
+        font-size: $font__l;
+        margin-top: 5%;
+        text-decoration: overline;
+        text-transform: uppercase;
+    }
+    // Areas
+    %titles__areas {
+        font-family: $quicksand;
+        font-size: $font__s;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30%;
+        text-decoration: overline;
+    }
+
+// Paragraphs
+    %text__paragraph {
+        font-family: $quicksand;
+        font-size: $font__m;
+        text-align: justify;
+        line-height: 1.5em;
+    }

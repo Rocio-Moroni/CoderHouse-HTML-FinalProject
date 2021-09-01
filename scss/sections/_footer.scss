@@ -1,0 +1,105 @@
+/* (STARTS) FOOTER */
+
+// Footer background
+footer {
+    background-image: linear-gradient(to top, rgb(82, 82, 82), black);
+    height: 30vh;
+    padding-top: 2.5%;
+    scroll-snap-align: start;
+    font-family: $quicksand;
+    color: white;
+    display: flex;
+
+    .footer__info, .footer__contact {
+        width: 25%;
+        margin-left: 2%;
+        text-align: justify;
+        h6 {
+            font-size: $font__s;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 0.8em;
+            line-height: 25px;
+        }}
+    .footer__nav {
+        margin-left: 4%;
+        h6 {
+            font-size: $font__s;
+            text-transform: uppercase;
+        }
+        .footer__ul {
+            list-style: none;
+            li {
+                margin-top: 4.5%;
+            }
+            a {
+                text-decoration: none;
+                font-size: 0.8em;
+                margin-left: -35%;
+            }}}
+    .footer__media {
+        width: 25%;
+        margin-left: 6%;
+        h6 {
+            font-size: $font__s;
+            text-transform: uppercase;
+            text-align: right;
+        }
+        .footer__logos {
+            margin-top: 0%;
+            margin-left: 68%;
+        }
+        a {
+            margin: 0 1.5% 0 1.5%;
+        }
+        img {
+            margin-top: 0.5%;
+        }
+        .footer__newsletter {
+            p {
+                margin-top: 2%;
+                font-size: 0.8em;
+                text-align: justify;
+            }
+            input {
+                width: 20em;
+                height: 2em;
+                .placeholder {
+                    text-align: center;
+            }}
+            ::-webkit-input-placeholder {
+                text-align: center;
+            }
+            button {
+                background-color: black;
+                margin-left: 3%;
+            }
+        }}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* LOGOS FLEXBOX*/
+// .footer-logos {
+//     display: flex;
+//     justify-content: space-around;
+//     margin-left: 40%;
+//     margin-top: 1%;
+//     width: 20%;
+// }
+
+

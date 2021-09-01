@@ -1,0 +1,93 @@
+/* (STARTS) SECTION CONTAINS: 4th VIEWPORT "OUR SERVICES" */
+
+/* FLEXBOX FOR VIEWPORT*/
+#our-services {
+    display: flex;
+
+    /* TITLE */
+    .our-services-title {
+        @include titles__entire--left;
+        @extend %titles__viewports;
+    }
+
+    /* GRID */
+    .our-services-grid {
+        font-family: $quicksand;
+        font-size: 1em;
+        text-align: center;
+        grid-column-gap: 6%;
+        grid-row-gap: 3%;
+        margin-top: 2%;
+        display: grid;
+        width: 90%;
+        height: 80vh;
+        margin-left: 5%;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        justify-content: space-evenly;
+        margin-top: 4%;
+            /* GRID TITLES */
+            h5 {
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            padding-top: 1em;
+            }
+            /* GRID IMAGES */
+            .grid-img1, .grid-img2, .grid-img3 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 33vh;
+            }
+            .grid-img1 {
+                background-image: url(/multimedia/images/our-services__web-page-design.png);
+            }
+            .grid-img2 {
+                background-image: url(/multimedia/images/our-services__adaptative.png);
+            }
+            .grid-img3 {
+                background-image: url(/multimedia/images/our-services__self-administrable.png);
+            }
+        }
+}
+
+// NO NESTEO LO SIGUIENTE YA QUE EN MEDIA QUERY AGREGO UNA SECCION CON DISPLAY NONE, DE ESTA FORMA NO DEBO ESCRIBIRLO EN AMBAS PARTES
+.our-services-container img {
+    justify-self: center;
+}
+img {
+    margin-top: -5%;
+}
+/* GRID TEXT */
+.our-services-grid p {
+    text-align: justify;
+    margin-top: 5%;
+}
+
+        // Black background 
+        .services__bg-color {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            height: 39%;
+            width: 100%;
+            margin-top: 8%;
+            margin-left: 0%;
+            position: absolute;
+            z-index: -100;
+        }
+
+                // White border
+                .services__white-border::after{
+                    border: 1px solid white;
+                    top: 5%;
+                    right: 4%;
+                    bottom: 3%;
+                    left: 4%;
+                    content: "";
+                    position: absolute;
+                    z-index: 0;
+                }

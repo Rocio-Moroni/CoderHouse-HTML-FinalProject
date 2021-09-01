@@ -1,0 +1,28 @@
+/* COMPONENTS */
+
+    // Mixin
+        // Back Home Button - Visit Webpage Button
+            @mixin button__ {
+                font-family: $quicksand;
+                font-size: $font__xs;
+                font-weight: 1000;
+                text-align: center;
+                text-decoration: none;
+                padding: 0em 1em;
+            }
+
+    // Variables
+
+        // Color:
+        // Black (Variable)
+            %button__black {
+                background-color: $bg-black;
+                color: $text-white;
+                border: 2px solid black;
+            }
+        // White (Variable)
+            %button__white {
+                background-color: $bg-white;
+                color: $text-black;
+                border: 1px solid black;
+            }

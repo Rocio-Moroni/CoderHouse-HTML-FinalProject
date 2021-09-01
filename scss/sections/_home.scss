@@ -1,0 +1,61 @@
+/* HEADER "HOME": TOP NAVIGATION BAR + BACKGROUND VIDEO (1ST VIEWPORT) */
+
+// Top navigation bar
+header {
+    nav {
+        display: flex;
+        label {
+            z-index: 100;
+            display: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        #home__btn {
+            display: none;
+        }
+            .navbar {
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+                a {
+                    font-family: $quicksand;
+                    font-size: $font__m;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $text-white;
+                    position: relative;
+
+                    &::after {
+                        @include animation__topnav (right)
+                    }
+        
+                    &::before {
+                        @include animation__topnav (left)
+                    }
+        
+                    &:hover::after {
+                        @include animation__top-nav--after-before (left)
+                    }
+        
+                    &:hover::before {
+                        @include animation__top-nav--after-before (right)
+                    }
+                }}}
+    // TITLE H1
+    h1 {
+        font-family: $lobster;  
+        text-transform: uppercase;
+        text-align: right;
+        font-style: italic;
+        color: white;
+        position: relative;
+        background-color: black;
+    }
+    // White border
+    .home__white-border::after{
+        border: 1px solid white;
+        content: "";
+        position: absolute;
+    }
+}

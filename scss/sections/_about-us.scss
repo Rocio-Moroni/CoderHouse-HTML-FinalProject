@@ -1,0 +1,76 @@
+/* (STARTS) SECTION "ABOUT US": "US" IMAGE + ASIDE TEXT (2ND VIEWPORT) */
+
+// Flexbox for viewport
+.about-us__container {
+    display: flex;
+    position: relative;
+
+    // Half left viewport flexbox
+    .about-us__viewport--half-left {
+        display: flex;
+        position: relative;
+
+        // Black background 
+        .about-us__bg-color {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+
+        // "US" image
+        .about-us__image {
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        }
+    }
+}
+
+    // "Back Home" Button
+    .button__top {
+        position: absolute;
+        right: 0%;
+        @include button__;
+        @extend %button__black;
+    }
+
+/* ABOUT US ASIDE TEXT */
+// Half right viewport flexbox
+.about-text-aside {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ABOUT US TEXT */
+.about-text-aside h4 {
+    @include titles__halfright--left;
+    @extend %titles__viewports;
+}
+
+.about-text {
+    @extend %text__paragraph;
+    @include paragraph__half--center;
+}
+
+.about-text-aside h5 {
+    @extend %titles__areas;
+    margin-top: 20%;
+}
+
+/* HAPPY CLIENTS QUOTES (CAROUSEL)*/
+.carousel-item {
+    font-family: $quicksand;
+    font-size: $font__s;
+    width: 30vw;
+    margin-left: 20%;
+    margin-top: 1%;
+    text-align: center;
+    font-style: italic;
+}
+.carousel-control-prev-icon {
+    background-image: url(../../multimedia/images/carousel__prev.png);
+}
+.carousel-control-next-icon {
+    background-image: url(../../multimedia/images/carousel__next.png);
+}
