@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rocio-Moroni/DESARROLLO-WEB-FRATELLI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rocio-Moroni/DESARROLLO-WEB-FRATELLI/issues"
+  },
+  "homepage": "https://github.com/Rocio-Moroni/DESARROLLO-WEB-FRATELLI#readme",
   "description": ""
 }
